@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.MainActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="50dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="20dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+        <LinearLayout
+            android:padding="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="425dp"
+            android:background="@drawable/button_background"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:textColor="@color/white"
+                android:textSize="27sp"
+                android:textAlignment="center"
+                android:text="Самые выгодные"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+            <TextView
+                android:textColor="@color/white"
+                android:textSize="26sp"
+                android:textAlignment="center"
+                android:text="тарифные планы"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </TextView>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_marginTop="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="270dp"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                android:orientation="horizontal"
+                >
+            </androidx.recyclerview.widget.RecyclerView>
+        </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/raleway_medium"
+                    android:textSize="30sp"
+                    android:text="Привет "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    >
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/userName"
+                    android:textColor="@color/fireBrick"
+                    android:fontFamily="@font/raleway_medium"
+                    android:textSize="30sp"
+                    tools:text="Рома"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    >
+
+                </TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/raleway_medium"
+                    android:textSize="22sp"
+                    android:text="Твой тарифный план: "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    >
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/userTariff"
+                    android:textColor="@color/fireBrick"
+                    android:fontFamily="@font/raleway_medium"
+                    android:textSize="22sp"
+                    tools:text="Черный"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    >
+
+                </TextView>
+
+
+            </LinearLayout>
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/accountSettingsButton"
+                android:text="Управление аккаунтом"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="40dp"
+                android:textSize="16sp"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                app:cornerRadius="5dp"
+                android:layout_marginBottom="15dp"
+                android:fontFamily="@font/raleway_medium"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                android:background="@drawable/button_background"
+                >
+
+            </androidx.appcompat.widget.AppCompatButton>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+        </LinearLayout>

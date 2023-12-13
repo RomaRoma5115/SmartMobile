@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_marginEnd="10dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        app:cardCornerRadius="15dp"
+        >
+       <LinearLayout
+           android:padding="15dp"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:orientation="vertical"
+           >
+           <TextView
+               android:id="@+id/name"
+               tools:text="name"
+               android:fontFamily="@font/raleway_medium"
+               android:textSize="30sp"
+               android:layout_width="match_parent"
+               android:textAlignment="center"
+               android:textColor="@color/black"
+               android:layout_height="wrap_content">
+
+           </TextView>
+           <TextView
+               android:id="@+id/description"
+               tools:text="description"
+               android:fontFamily="@font/raleway_medium"
+               android:textSize="20sp"
+               android:layout_width="match_parent"
+               android:textAlignment="center"
+               android:textColor="@color/black"
+               android:layout_height="wrap_content">
+           </TextView>
+
+           <LinearLayout
+               android:layout_marginTop="5dp"
+               android:gravity="center"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               >
+               <TextView
+                   android:textColor="@color/black"
+                   android:text="Кол-во смс:"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content">
+               </TextView>
+               <TextView
+                   android:id="@+id/countSms"
+                   android:textColor="@color/fireBrick"
+                   android:text=" 1"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content">
+               </TextView>
+           </LinearLayout>
+           <LinearLayout
+               android:layout_marginTop="5dp"
+               android:gravity="center"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               >
+               <TextView
+                   android:textColor="@color/black"
+                   android:text="Кол-во интернета:"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content">
+               </TextView>
+               <TextView
+                   android:id="@+id/packageInternet"
+                   android:textColor="@color/fireBrick"
+                   android:text=" 1"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content">
+               </TextView>
+           </LinearLayout>
+           <LinearLayout
+               android:layout_marginTop="5dp"
+               android:gravity="center"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               >
+               <TextView
+                   android:textColor="@color/black"
+                   android:text="Кол-во минут:"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content">
+               </TextView>
+               <TextView
+                   android:id="@+id/countMinutes"
+                   android:textColor="@color/fireBrick"
+                   android:text=" 1"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content">
+               </TextView>
+           </LinearLayout>
+           <androidx.appcompat.widget.AppCompatButton
+               android:layout_marginTop="10dp"
+               android:id="@+id/infoButton"
+               android:text="Подключить"
+               android:textSize="14sp"
+               android:layout_gravity="center"
+               android:layout_width="160dp"
+               android:layout_height="40dp"
+               app:cornerRadius="5dp"
+               android:layout_marginBottom="15dp"
+               android:fontFamily="@font/raleway_medium"
+               android:textColor="@color/white"
+               android:textAllCaps="false"
+               android:background="@drawable/button_background"
+               >
+           </androidx.appcompat.widget.AppCompatButton>
+       </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
